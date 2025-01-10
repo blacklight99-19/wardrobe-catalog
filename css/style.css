@@ -1,0 +1,68 @@
+body {
+    background-color: #FFF3D1;
+    color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.h1-text a {
+    font-family: 'Jacquard 24', cursive;  
+    font-size: 5vh;
+    color: #518F72;
+    text-decoration: none;
+}
+
+.current-page a {
+    color: rgb(228 227 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.view {
+    background-color: rgb(84 3 28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.block {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view .block:nth-child(1) {
+    justify-content: flex-end;
+    width: 44.5%;
+}
+
+.view .block:nth-child(2) {
+    background-image: url(../images/logo.png);
+    background-size: 7vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: 11%;
+}
+
+.view .block:nth-child(2) a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.view .block:nth-child(3) {
+    justify-content: flex-start;
+    width: 44.5%;
+}
+
+.progress {
+    display: flex;
+    color: rgba(143,19,46,255);
+    font-size: 20rem ;
+    font-family: 'Jacquard 24', cursive;  
+    justify-content: center;
+    text-align: center;
+}

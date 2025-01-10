@@ -1,0 +1,89 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.carousel {
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    top: 0;
+}
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tops {
+    height: 40vh;
+}
+
+.slide {
+    display: block;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 100ms opacity ease-out;
+    transition-delay: 100ms;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.slide > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.button {
+    position: absolute;
+    background: none;
+    border: none;
+    z-index: 2;
+}
+
+.button > img {
+    height: 8rem;
+}
+
+.button.next > img {
+    transform: scaleX(-1);
+}
+
+.button.prev {
+    top: 50%;
+    left: 22%;
+    transform: translateY(-50%);
+}
+
+button.next {
+    top: 50%;
+    right: 22%;
+    transform: translateY(-50%);
+}
+
+.button.prev:hover,
+.button.prev:focus {
+    background: url(../images/scroll-shadow.png);
+    background-repeat: no-repeat;
+    background-position: 30% 60%;
+}
+
+.button.next:hover,
+.button.next:focus {
+    background: url(../images/scroll-shadow-next.png);
+    background-repeat: no-repeat;
+    background-position: 60% 60%;
+}
+
+.button:active {
+    top: 52%;
+}

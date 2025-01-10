@@ -1,0 +1,108 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  font-family: "Jersey 10", serif;
+  font-size: 4.5rem;
+  text-align: center;
+  color: rgba(81, 142, 114, 255);
+}
+
+.para {
+  font-family: "Jersey 10", serif;
+  font-size: 2.5rem;
+  color: rgba(83, 3, 28, 255);
+}
+
+.catalog {
+  display: flex;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+}
+
+.item {
+  background-color: rgba(195,181,128,255);
+  display: flex;
+  flex-wrap: wrap;
+  height: 120px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.name, .combo, .button-icon {
+  display: flex;
+  height: 100%;
+  padding: 1rem;
+}
+
+.name, .name-alt {
+  justify-content: center;
+  width: 60%;
+}
+
+.combo, .combo-alt {
+  width: 20%;
+}
+
+.button-icon {
+  background-image: url(../images/plus.png);
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  width: 20%;
+}
+
+.button-icon:hover,
+.button-icon:focus {
+  background: url(../images/plus-white.png);
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  width: 20%;
+}
+
+.show-more-plus {
+  background-image: url(../images/minus.png);
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  width: 20%;
+}
+
+.show-more-plus:hover,
+.show-more-plus:focus {
+  background: url(../images/minus-white.png);
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  width: 20%;
+}
+
+.show-more {
+  background-color: rgba(195,181,128,255);
+  color: rgba(143,19,46,255);
+  display: none;
+  padding: 1rem;
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hidden {
+  display: none;
+}
